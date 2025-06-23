@@ -1,6 +1,6 @@
 ---
 name: feature_request
-description: 新機能や改善の提案を行うためのテンプレート
+about: 新機能や改善の提案を行うためのテンプレート
 title: "[提案] タイトルを記入してください"
 labels: enhancement
 assignees: taka0024brainbit
