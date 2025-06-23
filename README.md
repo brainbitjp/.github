@@ -7,5 +7,4 @@ git subtree pull --prefix=.github github-templates main --squash
 git fetch github-templates
 
 ## 最新内容の反映
-
-git subtree push --prefix=.github github-templates main --force
+git subtree push --prefix=.github https://github.com/brainbitjp/.github.git main
