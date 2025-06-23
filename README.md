@@ -2,14 +2,10 @@
 
 ## 最新内容の取込
 
-git fetch origin
+git subtree pull --prefix=.github github-templates main --squash
 
-git pull origin main
+git fetch github-templates
 
 ## 最新内容の反映
 
-git add . 
-
-git commit -m "コミットメッセージ"
-
-git push origin main
+git subtree push --prefix=.github github-templates main --force
