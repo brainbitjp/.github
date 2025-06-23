@@ -4,7 +4,6 @@ about: バグを報告するためのテンプレート
 title: "[バグ] タイトルを記入してください"
 labels: bug
 assignees: taka0024brainbit
-
 ---
 
 - type: textarea
