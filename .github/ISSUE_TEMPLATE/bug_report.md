@@ -1,5 +1,5 @@
 ---
-name: bug_repor
+name: bug_report
 about: バグを報告するためのテンプレート
 title: "[バグ] タイトルを記入してください"
 labels: bug
