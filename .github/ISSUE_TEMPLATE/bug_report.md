@@ -1,38 +1,50 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
+name: バグ報告
+about: バグを報告するためのテンプレート
+title: '[バグ] タイトルを記入してください'
+labels: ["bug"]
 assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+body:
+  - type: textarea
+    attributes:
+      label: 概要
+      description: バグの内容を簡潔に記載してください。
+      placeholder: 例）保存ボタンを押してもデータが保存されません
+    validations:
+      required: true
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+  - type: textarea
+    attributes:
+      label: 再現手順
+      description: バグを再現する手順を記載してください。
+      placeholder: |
+        1. ○○画面を開く
+        2. 「保存」ボタンをクリック
+        3. エラーが表示される
+    validations:
+      required: true
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+  - type: input
+    attributes:
+      label: 使用環境
+      description: バグが発生した環境を記載してください。
+      placeholder: OS、ブラウザ、端末名など
+    validations:
+      required: false
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+  - type: textarea
+    attributes:
+      label: 期待される動作
+      description: 本来どうなるべきだったかを記載してください。
+    validations:
+      required: false
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
-
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
+  - type: textarea
+    attributes:
+      label: 補足情報
+      description: スクリーンショットやログなど、参考になる情報があれば記載してください。
+    validations:
+      required: false
