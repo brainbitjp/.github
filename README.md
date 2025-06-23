@@ -1,10 +1,12 @@
-#最新内容の取込
+# .github
 
-## .githubディレクトリ内で実行
-cd .github
+## 最新内容の取込
 
-## リモートの最新情報を確認
 git fetch origin
-
-## mainブランチの内容をpull
 git pull origin main
+
+## 最新内容の反映
+
+git add . 
+git commit -m "コミットメッセージ"
+git push origin main
